@@ -2,3 +2,8 @@
 plugins {
     alias(libs.plugins.android.application) apply false
 }
+
+allprojects {
+    val relPath = if (path == ":") "" else path.replace(':', '/')
+    layout.buildDirectory.set(file("${System.getProperty("user.home")}/UniVisionBuild/UniVision$relPath"))
+}
