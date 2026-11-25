@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="botones">#2563EB</color>
+    <color name="campo_seleccionado">#D0E7FB</color>
+    <color name="titulos">#0F172A</color>
+    <color name="texto_recuadro">#64748B</color>
+    <color name="texto_pequeno">#1E40AF</color>
+    <color name= "fondo_app">#E2E8F0</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="titulos">#FF15243B</color>
