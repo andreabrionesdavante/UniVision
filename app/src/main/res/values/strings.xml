@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">UniVision</string>
+    <string name="app_title">UniVision</string>
     <string name="brand_name">UniVision</string>
     <string name="welcome_title">Encuentra tu universidad y grado</string>
     <string name="field_label">Contraseña</string>
