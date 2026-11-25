@@ -94,7 +94,7 @@
     <string name="brand_name">UniVision</string>
     <string name="welcome_title">Encuentra tu universidad y grado</string>
     <string name="field_label">Contraseña</string>
-    <string name="confirmar_contrasena">Confirmar contraseña</string>"
+    <string name="confirmar_contrasena">Confirmar contraseña</string>
     <string name="field_value">Introduce tu contraseña</string>
     <string name="password_recovery">¿Olvidaste tu contraseña?</string>
     <string name="action_label">Iniciar sesión</string>
@@ -109,7 +109,7 @@
     <string name="apellidos_hint">Introduce tus apellidos</string>
     <string name="etapa">¿En que etapa estás?</string>
     <string name="futuro_estudiante">Futuro estudiante</string>
-    <string name="estudiante_universitario">Estudiante universitario</string>"
+    <string name="estudiante_universitario">Estudiante universitario</string>
     <string name="registro">Registrarse</string>
     <string name="cuenta_existente">¿Ya tienes cuenta?</string>
 
