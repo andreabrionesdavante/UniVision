@@ -1,10 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+
+    <string name="app_myapp">MyApp</string>
+
+    <string name="titulo">Universidades</string>
+    <string name="subtitulo">Encuentra tu universidad</string>
+    <string name="buscar">Busca universidad o ciudad</string>
+    <string name="etiqueta">Grados</string>
+    <string name="titulo_de_resultados">Universidades para ti</string>
+    <string name="orden">Relevancia</string>
+    <string name="nombre_universidad">Universidad de Sevilla</string>
+    <string name="ciudad">Sevilla · Andalucía</string>
+    <string name="puntuacion">4,5</string>
+    <string name="escala">/ 5 · demo</string>
+    <string name="texto">Perfil</string>
+
+    <string name="e_publica">Pública</string>
+    <string name="e_privada">Privada</string>
+    <string name="e_ubicacion1">Madrid</string>
+    <string name="e_ubicacion2">Andalucía</string>
+    <string name="e_ubicacion3">Cataluña</string>
+    <string name="e_ubicacion4">Valencia</string>
+
+    <string name="nombre_universidad_resultante1">Universidad Complutense de Madrid</string>
+    <string name="ciudad_universidad_resultante1">Madrid · Comunidad de Madrid</string>
+    <string name="puntuacion_universidad_resultante1">4,6</string>
+    <string name="guardar_universidad">Guardar universidad</string>
+
+    <string name="nav_inicio">Inicio</string>
+    <string name="nav_universidades">Universidades</string>
+    <string name="nav_grados">Grados</string>
+
+
+    <!--strings para el detalle de la universidad-->
+
+    <!-- Campus e información general -->
+    <string name="volver">Volver</string>
+    <string name="e_campus">Ciudad Universitaria</string>
+    <string name="separador_punto">·</string>
+    <string name="tipo_universidad_publica">Universidad pública</string>
+
+    <!-- Estadísticas -->
+    <string name="dato_grados">85</string>
+    <string name="dato_facultades">26</string>
+    <string name="etiqueta_grados">Grados</string>
+    <string name="etiqueta_valoracion">Valoración / 5</string>
+    <string name="etiqueta_facultades">Facultades</string>
+
+    <!-- Descripción -->
+    <string name="titulo_descripcion">Un campus lleno de posibilidades</string>
+    <string name="descripcion_universidad">Estudia en Madrid en un entorno de diversidad, investigación y vida universitaria. Descubre sus bibliotecas, espacios culturales y campus.</string>
+
+    <!-- Opiniones -->
+    <string name="titulo_opiniones">Así se vive la universidad</string>
+    <string name="opinion1_iniciales">LM</string>
+    <string name="opinion1_autor">Lucía M. · Psicología</string>
+    <string name="opinion1_texto">«Me encanta el ambiente y estudiar en la biblioteca con mis compañeros.»</string>
+    <string name="opinion2_iniciales">AR</string>
+    <string name="opinion2_autor">Álvaro R. · Historia</string>
+    <string name="opinion2_texto">«Hay mucha vida cultural y siempre algo nuevo por descubrir.»</string>
+
+    <!-- Botones -->
+    <string name="boton_web_oficial">Web oficial</string>
+    <string name="boton_ver_grados">Ver grados</string>
+
+    <!-- Cabecera y buscador -->
+    <string name="titulo_grados">Elige tu camino</string>
+    <string name="subtitulo_grados">Descubre el grado ideal para ti</string>
+    <string name="buscar_grados">¿Qué te gustaría estudiar?</string>
+
+    <!-- Filtros por categoría -->
+    <string name="e_ingenieria">Ingeniería</string>
+    <string name="e_salud">Salud</string>
+    <string name="e_ciencias">Ciencias</string>
+    <string name="e_artes">Artes</string>
+    <string name="e_ciencias_sociales">Ciencias Sociales</string>
+
+    <!-- Resultados -->
+    <string name="titulo_de_resultados_grados">Grados disponibles</string>
+    <string name="e_nota_de_corte">Nota de corte</string>
+
+    <string name="nombre_grado_resultante1">Ingeniería Informática</string>
+    <string name="nota_de_corte_grado1">11,250</string>
+
+    <string name="nombre_grado_resultante2">Psicología</string>
+    <string name="nota_de_corte_grado2">10,850</string>
+
+    <string name="nombre_grado_resultante3">Historia del Arte</string>
+    <string name="nota_de_corte_grado3">7,200</string>
+
     <string name="app_title">UniVision</string>
     <string name="brand_name">UniVision</string>
     <string name="welcome_title">Encuentra tu universidad y grado</string>
     <string name="field_label">Contraseña</string>
-    <string name="confirmar_contrasena">Confirmar contraseña</string>"
+    <string name="confirmar_contrasena">Confirmar contraseña</string>
     <string name="field_value">Introduce tu contraseña</string>
     <string name="password_recovery">¿Olvidaste tu contraseña?</string>
     <string name="action_label">Iniciar sesión</string>
@@ -19,7 +109,7 @@
     <string name="apellidos_hint">Introduce tus apellidos</string>
     <string name="etapa">¿En que etapa estás?</string>
     <string name="futuro_estudiante">Futuro estudiante</string>
-    <string name="estudiante_universitario">Estudiante universitario</string>"
+    <string name="estudiante_universitario">Estudiante universitario</string>
     <string name="registro">Registrarse</string>
     <string name="cuenta_existente">¿Ya tienes cuenta?</string>
 
