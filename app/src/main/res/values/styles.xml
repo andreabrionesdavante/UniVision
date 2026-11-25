@@ -40,7 +40,12 @@
 
     <style name="TextoLink" parent="Tipografia">
         <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/boton_inicio_registro</item>
+        <item name="android:textColor">@color/botones</item>
         <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextoSelectorEtapa" parent="Tipografia">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/texto_pequeno</item>
     </style>
 </resources>
