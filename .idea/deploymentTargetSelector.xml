@@ -6,9 +6,7 @@
         <option name="selectionMode" value="DROPDOWN" />
         <DropdownSelection timestamp="2026-11-25T10:18:58.141188100Z">
           <Target type="DEFAULT_BOOT">
-            <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\Judith\.android\avd\Pixel_2_XL_API_30.avd" />
-            </handle>
+            
           </Target>
         </DropdownSelection>
         <DialogSelection />
