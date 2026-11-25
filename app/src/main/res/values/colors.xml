@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <color name="botones">#2563EB</color>
     <color name="campo_seleccionado">#D0E7FB</color>
     <color name="titulos">#0F172A</color>
