@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/busqueda_universidades"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_fondo_universidades_resultantes">
+
+    <!--Todo dentro de un scroll-->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/explorar_universidades"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/navegacion_principal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="16dp">
+
+            <!--Encabezado-->
+            <LinearLayout
+                android:id="@+id/cabecera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/titulo_y_contexto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/titulo"
+                        android:textColor="@color/c_titulos"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/subtitulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtitulo"
+                        android:textColor="@color/c_subtitulos2"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/identidad"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/bg_identidad">
+
+                    <ImageView
+                        android:id="@+id/ic_brujula"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_brujula"
+                        app:tint="@color/c_iconos_etiquetas" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <!--Barra de búsqueda-->
+            <LinearLayout
+                android:id="@+id/barra_de_busqueda"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_barra_de_busqueda"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp">
+
+                <ImageView
+                    android:id="@+id/ic_buscar"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_buscar"
+                    app:tint="@color/c_subtitulos2" />
+
+                <TextView
+                    android:id="@+id/buscar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/buscar"
+                    android:textColor="@color/c_subtitulos2"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/separador"
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="@color/c_fondo_buscador" />
+
+                <ImageView
+                    android:id="@+id/ic_filtros"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="12dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_filtros"
+                    app:tint="@color/c_iconos_etiquetas" />
+            </LinearLayout>
+
+            <!--Filtros-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/filtros_de_universidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/e_publica"
+                    style="@style/EtiquetaFiltro"
+                    android:text="@string/e_publica"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/e_privada"
+                    style="@style/EtiquetaFiltro"
+                    android:text="@string/e_privada"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/e_ubicacion1"
+                    style="@style/EtiquetaFiltro"
+                    android:text="@string/e_ubicacion1"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/e_ubicacion2"
+                    style="@style/EtiquetaFiltro"
+                    android:text="@string/e_ubicacion2"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/e_ubicacion3"
+                    style="@style/EtiquetaFiltro"
+                    android:text="@string/e_ubicacion3"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/e_ubicacion4"
+                    style="@style/EtiquetaFiltro"
+                    android:text="@string/e_ubicacion4"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.constraintlayout.helper.widget.Flow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="e_publica,e_privada,e_ubicacion1,e_ubicacion2,e_ubicacion3,e_ubicacion4"
+                    app:flow_horizontalBias="0"
+                    app:flow_horizontalGap="8dp"
+                    app:flow_horizontalStyle="packed"
+                    app:flow_verticalGap="8dp"
+                    app:flow_wrapMode="chain"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--Encabezado de resultados-->
+            <LinearLayout
+                android:id="@+id/resultados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/titulo_de_resultados"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/titulo_de_resultados"
+                    android:textColor="@color/c_titulos"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/ordenar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/orden"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/orden"
+                        android:textColor="@color/c_iconos_etiquetas"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ic_flecha_abajo"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginStart="2dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_flecha_abajo"
+                        app:tint="@color/c_iconos_etiquetas" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Universidad resultante 1-->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/universidad_resultante1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="@color/c_fondo_universidades_resultantes"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/c_fondo_buscador"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/campus1"
+                        android:layout_width="match_parent"
+                        android:layout_height="108dp">
+
+                        <ImageView
+                            android:id="@+id/fotografia_del_campus1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@null"
+                            android:scaleType="centerCrop"
+                            tools:background="@color/c_fondo_busqueda" />
+
+                        <TextView
+                            android:id="@+id/tipo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|start"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/bg_tipo"
+                            android:paddingStart="8dp"
+                            android:paddingTop="4dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="4dp"
+                            android:text="@string/e_publica"
+                            android:textColor="@color/c_iconos_etiquetas"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:id="@+id/accion_de_favorito1"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/bg_favorito"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <ImageView
+                                android:id="@+id/ic_favorito1"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/guardar_universidad"
+                                android:src="@drawable/ic_favorito"
+                                app:tint="@color/c_favorito_seleccionado" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/info_universidad_resultante1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="14dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="14dp"
+                        android:paddingBottom="14dp">
+
+                        <TextView
+                            android:id="@+id/nombre_universidad_resultante1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/nombre_universidad_resultante1"
+                            android:textColor="@color/c_titulos"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/ubicacion_y_valoracion_universidad_resultante1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/ic_ubicacion1"
+                                android:layout_width="13dp"
+                                android:layout_height="13dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_ubicacion"
+                                app:tint="@color/c_subtitulos2" />
+
+                            <TextView
+                                android:id="@+id/ciudad_universidad_resultante1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="@string/ciudad_universidad_resultante1"
+                                android:textColor="@color/c_subtitulos2"
+                                android:textSize="12sp" />
+
+                            <ImageView
+                                android:id="@+id/ic_estrella1"
+                                android:layout_width="13dp"
+                                android:layout_height="13dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_estrella"
+                                app:tint="@color/c_estrella" />
+
+                            <TextView
+                                android:id="@+id/puntuacion_universidad_resultante1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="@string/puntuacion_universidad_resultante1"
+                                android:textColor="@color/c_titulos"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/escala1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="@string/escala"
+                                android:textColor="@color/c_subtitulos2"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!--Universidad resultante 2-->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/universidad_resultante2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="@color/c_fondo_universidades_resultantes"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/c_fondo_buscador"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/campus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="108dp">
+
+                        <ImageView
+                            android:id="@+id/fotografia_del_campus2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@null"
+                            android:scaleType="centerCrop"
+                            tools:background="@color/c_fondo_busqueda" />
+
+                        <TextView
+                            android:id="@+id/tipo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|start"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/bg_tipo"
+                            android:paddingStart="8dp"
+                            android:paddingTop="4dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="4dp"
+                            android:text="@string/e_publica"
+                            android:textColor="@color/c_iconos_etiquetas"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:id="@+id/accion_de_favorito2"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/bg_favorito"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <ImageView
+                                android:id="@+id/ic_favorito2"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/guardar_universidad"
+                                android:src="@drawable/ic_favorito"
+                                app:tint="@color/c_iconos_etiquetas" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/info_universidad_resultante2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="14dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="14dp"
+                        android:paddingBottom="14dp">
+
+                        <TextView
+                            android:id="@+id/nombre_universidad_resultante2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/nombre"
+                            android:textColor="@color/c_titulos"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/ubicacion_y_valoracion_universidad_resultante2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/ic_ubicacion2"
+                                android:layout_width="13dp"
+                                android:layout_height="13dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_ubicacion"
+                                app:tint="@color/c_subtitulos2" />
+
+                            <TextView
+                                android:id="@+id/ciudad_universidad_resultante2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="@string/ciudad"
+                                android:textColor="@color/c_subtitulos2"
+                                android:textSize="12sp" />
+
+                            <ImageView
+                                android:id="@+id/ic_estrella2"
+                                android:layout_width="13dp"
+                                android:layout_height="13dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_estrella"
+                                app:tint="@color/c_estrella" />
+
+                            <TextView
+                                android:id="@+id/puntuacion_universidad_resultante2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="@string/puntuacion"
+                                android:textColor="@color/c_titulos"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/escala2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="@string/escala"
+                                android:textColor="@color/c_subtitulos2"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!--Botones para navegar-->
+    <LinearLayout
+        android:id="@+id/navegacion_principal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/c_fondo_universidades_resultantes"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingTop="9dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!--Botón para ir al inicio-->
+        <LinearLayout
+            android:id="@+id/destino_inicio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/indicador_inicio"
+                android:layout_width="52dp"
+                android:layout_height="28dp">
+
+                <ImageView
+                    android:id="@+id/ic_inicio"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_inicio"
+                    app:tint="@color/c_subtitulos2" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/e_inicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_inicio"
+                android:textColor="@color/c_subtitulos2"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- Botón para ir a Universidades (donde estamos)-->
+        <LinearLayout
+            android:id="@+id/destino_universidades"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/indicador_universidades"
+                android:layout_width="52dp"
+                android:layout_height="28dp"
+                android:background="@drawable/bg_indicador_activo">
+
+                <ImageView
+                    android:id="@+id/ic_universidades"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_universidades"
+                    app:tint="@color/c_iconos_etiquetas" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/e_universidades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_universidades"
+                android:textColor="@color/c_iconos_etiquetas"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--Botón para ir a Grados -->
+        <LinearLayout
+            android:id="@+id/destino_grados"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/indicador_grados"
+                android:layout_width="52dp"
+                android:layout_height="28dp">
+
+                <ImageView
+                    android:id="@+id/ic_grados"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_grados"
+                    app:tint="@color/c_subtitulos2" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/e_grados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_grados"
+                android:textColor="@color/c_subtitulos2"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!--Botón para ir a Perfil-->
+        <LinearLayout
+            android:id="@+id/destino_perfil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/indicador_perfil"
+                android:layout_width="52dp"
+                android:layout_height="28dp">
+
+                <ImageView
+                    android:id="@+id/ic_perfil"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_perfil"
+                    app:tint="@color/c_subtitulos2" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/e_perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto"
+                android:textColor="@color/c_subtitulos2"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
