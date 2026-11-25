@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="BannerRedondeado">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="Tipografia">
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+
+    <style name="TextoTitulosPantallas" parent="Tipografia">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/titulos</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextoDescriptivo" parent="Tipografia">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/titulos</item>
+    </style>
+
+    <style name="TextoCampos" parent="Tipografia">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/texto_recuadro</item>
+    </style>
+
+    <style name="TextoBotones" parent="Tipografia">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextoAdicional" parent="Tipografia">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/texto_recuadro</item>
+    </style>
+
+    <style name="TextoLink" parent="Tipografia">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/boton_inicio_registro</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
