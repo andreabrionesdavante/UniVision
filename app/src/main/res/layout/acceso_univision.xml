@@ -50,7 +50,7 @@
             android:text="@string/email_label"
             android:textStyle="bold" />
 
-        <!-- Campo Correo electrónico -->
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tilCorreo"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -79,7 +79,7 @@
                 android:textColorHint="@color/texto_recuadro" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Etiqueta Contraseña -->
+
         <TextView
             style="@style/TextoDescriptivo"
             android:layout_width="wrap_content"
@@ -88,7 +88,7 @@
             android:text="@string/field_label"
             android:textStyle="bold" />
 
-        <!-- Campo Contraseña -->
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tilContrasena"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -116,7 +116,7 @@
                 android:textColorHint="@color/texto_recuadro" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Enlace Olvidaste tu contraseña -->
+
         <TextView
             android:id="@+id/tvContrasenaOlvidada"
             style="@style/TextoLink"
@@ -126,7 +126,7 @@
             android:layout_marginTop="12dp"
             android:text="@string/password_recovery" />
 
-        <!-- Botón Iniciar sesión -->
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnInicio"
             android:layout_width="match_parent"
@@ -142,7 +142,7 @@
             app:iconPadding="8dp"
             app:iconTint="@color/white" />
 
-        <!-- Pie de registro -->
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

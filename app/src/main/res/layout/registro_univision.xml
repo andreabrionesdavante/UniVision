@@ -40,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/nombre"
+                android:text="@string/nombre_usuario"
                 android:textStyle="bold" />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -75,7 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/apellidos"
+                android:text="@string/apellidos_usuario"
                 android:textStyle="bold" />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -103,7 +103,7 @@
                     android:textColorHint="@color/texto_recuadro" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Correo electrónico -->
+
             <TextView
                 android:id="@+id/tvCorreo"
                 style="@style/TextoDescriptivo"
@@ -138,7 +138,7 @@
                     android:textColorHint="@color/texto_recuadro" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Contraseña -->
+
             <TextView
                 style="@style/TextoDescriptivo"
                 android:layout_width="wrap_content"
@@ -174,7 +174,7 @@
                     android:textColorHint="@color/texto_recuadro" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Confirmar contraseña -->
+
             <TextView
                 style="@style/TextoDescriptivo"
                 android:layout_width="wrap_content"
@@ -210,7 +210,7 @@
                     android:textColorHint="@color/texto_recuadro" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Selector de etapa -->
+
             <TextView
                 style="@style/TextoDescriptivo"
                 android:layout_width="wrap_content"
@@ -266,7 +266,7 @@
                 android:layout_height="54dp"
                 android:layout_marginTop="24dp"
                 android:backgroundTint="@color/botones"
-                android:text="@string/registro"
+                android:text="@string/registro_usuario"
                 android:textAllCaps="false"
                 android:textAppearance="@style/TextoBotones"
                 app:cornerRadius="28dp"
