@@ -455,7 +455,7 @@
                             android:layout_height="wrap_content"
                             android:ellipsize="end"
                             android:maxLines="1"
-                            android:text="@string/nombre"
+                            android:text="@string/nombre_universidad"
                             android:textColor="@color/c_titulos"
                             android:textSize="15sp"
                             android:textStyle="bold" />

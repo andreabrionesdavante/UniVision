@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MyApp</string>
+    <string name="app_myapp">MyApp</string>
     <string name="titulo">Universidades</string>
     <string name="subtitulo">Encuentra tu universidad</string>
     <string name="buscar">Busca universidad o ciudad</string>
     <string name="etiqueta">Grados</string>
     <string name="titulo_de_resultados">Universidades para ti</string>
     <string name="orden">Relevancia</string>
-    <string name="nombre">Universidad de Sevilla</string>
+    <string name="nombre_universidad">Universidad de Sevilla</string>
     <string name="ciudad">Sevilla · Andalucía</string>
     <string name="puntuacion">4,5</string>
     <string name="escala">/ 5 · demo</string>

@@ -35,7 +35,7 @@
                     android:layout_height="match_parent"
                     android:contentDescription="@null"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/campus_complutense"
+                    android:src="@drawable/universidad_complutense_de_madrid"
                     tools:background="@color/c_fondo_busqueda" />
 
                 <FrameLayout
