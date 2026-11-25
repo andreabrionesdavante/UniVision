@@ -31,10 +31,7 @@
         <item name="android:textColor">#FF2563EB</item>
         <item name="android:fontFamily">Inter</item>
     </style>
-    <style name="TextStyle_15sp">
-        <item name="android:textSize">15sp</item>
-        <item name="android:textColor">#FF15243B</item>
-        <item name="android:fontFamily">Inter</item>
+
 
 
     <style name="BannerRedondeado">

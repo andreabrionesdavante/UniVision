@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <color name="c_titulos">#FF15243B</color>
-    <color name="c_iconos_etiquetas">#FF2563EB</color>
-    <color name="c_subtitulos">#FF475569</color>
-    <color name="c_subtitulos2">#FF64748B</color>
-    <color name="c_estrella">#FFB77908</color>
-    <color name="c_fondo_busqueda">#FFDBEAFE</color>
-    <color name="c_fondo_buscador">#FFE2E8F0</color>
-    <color name="c_fondo_universidades_resultantes">#FFFFFF</color>
-    <color name="c_favorito_seleccionado">#FFFF383C</color>
-
-
-    <color name="botones">#2563EB</color>
-    <color name="campo_seleccionado">#D0E7FB</color>
-    <color name="titulos">#0F172A</color>
-    <color name="texto_recuadro">#64748B</color>
-    <color name="texto_pequeno">#1E40AF</color>
-    <color name= "fondo_app">#E2E8F0</color>
+    <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
+    <color name="titulos">#FF15243B</color>
+    <color name="texto_recuadro">#FF64748B</color>
+    <color name="botones">#FF2563EB</color>
+    <color name="texto_pequeno">#FF2563EB</color>
+    <color name="c_subtitulos2">#FF64748B</color>
+    <color name="c_titulos">#FF15243B</color>
+    <color name="c_subtitulos">#FF64748B</color>
+    <color name="c_iconos_etiquetas">#FF2563EB</color>
+    <color name="c_fondo_busqueda">#FFF1F5F9</color>
+    <color name="c_fondo_universidades_resultantes">#FFF8FAFC</color>
+    <color name="c_fondo_buscador">#FFE2E8F0</color>
+    <color name="campo_seleccionado">#FFDBEAFE</color>
+    <color name="fondo_app">#FFF8FAFC</color>
+    <color name="c_favorito_seleccionado">#FFE11D48</color>
+    <color name="c_estrella">#FFF59E0B</color>
 </resources>
